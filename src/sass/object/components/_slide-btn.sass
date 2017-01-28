@@ -1,0 +1,45 @@
+%slide-option
+  text-align: center
+  cursor: pointer
+
+=slide-icon($border-width: 5px 10px 5px 0, $border-color: transparent #ffffff transparent transparent)
+  display: block
+  content: ''
+  width: 0
+  height: 0
+  margin: auto
+  border-style: solid
+  border-width: $border-width
+  border-color: $border-color
+
+.c-slide-nav
+  position: relative
+  display: flex
+  justify-content: space-between
+  color: #fff
+  line-height: 40px
+  &__btn-prev
+    @extend %slide-option
+    width: 40px
+    height: 40px
+    &:before
+      position: absolute
+      top: 0
+      left: 20px
+      bottom: 0
+      +slide-icon
+  &__btn-instruction
+    @extend %slide-option
+    width: 100%
+    &:hover
+      background: rgba(255,255,255,0.1)
+  &__btn-next
+    @extend %slide-option
+    width: 40px
+    height: 40px
+    &:before
+      position: absolute
+      top: 0
+      right: 20px
+      bottom: 0
+      +slide-icon(5px 0 5px 10px, transparent transparent transparent #ffffff)

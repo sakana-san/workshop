@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>default_title</title>
+  <link rel="stylesheet" href="./dist/css/common.css" type="text/css" >
+</head>
+<body class="">
+<header class="l-header">
+  <nav class="p-navigation-list js-tracking-taget-put-in">
+    <ul class="c-navigation">
+      <li class="c-navigation__item"><a href="#anc1"class="js-anchor-top">HOME</a></li>
+      <li class="c-navigation__item"><a href="#anc2"class="js-anchor">ABOUT</a></li>
+      <li class="c-navigation__item"><a href="#anc3"class="js-anchor">PRODUCT</a></li>
+      <li class="c-navigation__item"><a href="#anc4"class="js-anchor">SKILL</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="l-main">
+  <div class="p-intro js-tracking-target-put-out">
+    <div class="p-intro__frame">
+      <ul class="p-intro__slide js-slide"></ul>
+    </div>
+    <div class="c-slide-nav">
+      <span class="c-slide-nav__btn-prev js-prev"></span>
+      <p class="c-slide-nav__btn-instruction js-move-down">click Go PRODUCT</p>
+      <span class="c-slide-nav__btn-next js-next"></span>
+    </div>
+  </div>
+  <div class="p-about js-anc2">
+    <h1 class="c-heading">ABOUT</h1>
+    <p>某大手企業でフロントエンドエンジニアをやっています。</p>
+  </div>
+  <div class="p-product js-anc3 js-move-down-target">
+    <h1 class="c-heading">PRODUCT</h1>
+    <ul>
+      <li class="p-product__thumbnail is-photo-01 js-activate-modal" data-type="01"></li>
+      <li class="p-product__thumbnail is-photo-02 js-activate-modal" data-type="02"></li>
+      <li class="p-product__thumbnail is-photo-03 js-activate-modal" data-type="03"></li>
+      <li class="p-product__thumbnail is-photo-04 js-activate-modal" data-type="04"></li>
+    </ul>
+  </div>
+</div>
+<div class="p-skill js-place-skill-list js-anc4">
+  <h1 class="c-heading">SKILL</h1>
+</div>
+<footer class="l-footer">
+  <p class="c-page-top js-page-top"></p>
+  <p class="c-footer__text">© sakana</p>
+</footer>
+<script src="./dist/js/vendor.js"></script>
+<script src="./dist/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.p-product
+  @extend %wrapper
+  > ul
+    @extend %clearfix
+  &__thumbnail
+    float: left
+    width: 460px
+    margin-right: 20px
+    margin-bottom: 20px
+    border: 2px solid #ddd
+    box-sizing: border-box
+    cursor: pointer
+    @for $i from 1 through 4
+      &.is-photo-0#{$i}
+        height: 200px
+        background: url('../../dist/img/photo0#{$i}.png') center center / cover no-repeat
+        &:hover
+          &:before
+            display: block
+            content: ''
+            height: 196px
+            background: rgba(0, 0, 0, .2)
+    &:nth-child(even)
+      margin-right: 0
+    &:last-child,
+    &:nth-last-child(2):nth-child(odd)
+      margin-bottom: 0

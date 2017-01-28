@@ -1,0 +1,47 @@
+=ability-score($width: 226)
+  position: absolute
+  top: 34px
+  left: 117px
+  width: $width + px
+  height: 28px
+  background-color: #ddd
+  z-index: 0
+
+
+.p-skill
+  @extend %wrapper
+  > ul
+    @extend %clearfix
+  &__item
+    position: relative
+    float: left
+    width: 460px
+    margin-right: 20px
+    text-align: center
+    &:nth-child(even)
+      margin-right: 0
+  &__status
+    > table
+      position: relative
+      width: 230px
+      height: 30px
+      margin: 10px auto 20px
+      border: 2px solid #999
+      border-collapse: collapse
+      z-index: 1
+      td
+        border-right: 2px solid #999
+
+  // スキルのステータス一覧
+  &__gauge--FLOCSS
+    +ability-score
+  &__gauge--SASS
+    +ability-score
+  &__gauge--jQuery
+    +ability-score(152)
+  &__gauge--Javascript
+    +ability-score(113)
+  &__gauge--Ruby
+    +ability-score(76)
+  &__gauge--Photoshop
+    +ability-score
