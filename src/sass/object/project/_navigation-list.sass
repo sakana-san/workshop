@@ -1,14 +1,16 @@
+//headerにあるナビゲーション
 .p-navigation-list
   position: relative
-.p-navigation-tracking-list
-  position: relative
-  .is-tracking
-    display: none;
-    position: fixed
-    top: 0
-    width: 100%
-    height: 40px
-    line-height: 40px
-    text-align: center
-    background: #fff
-    z-index: 2
+  //スクロールした時に出るナビゲーション
+  &--tracking
+    position: relative
+    .is-tracking
+      display: none
+      position: fixed
+      top: 0
+      width: 100%
+      height: 40px
+      line-height: 40px
+      text-align: center
+      background: #fff
+      z-index: 2
