@@ -6,7 +6,6 @@ gulp.task('build', function() {
     'clearCache',
     'clean',
     'localServer',
-    ['sass','sprite', 'lint', 'webpack', 'imageOptim'],
-
+    ['sass','sprite', 'lint', 'webpack', 'imageOptim']
   );
 });
