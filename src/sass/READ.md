@@ -1,28 +1,32 @@
-●SASSの書き方
-
+# SASSの書き方
+```
 mixin test
 ↓
 =test
-
+```
+```
 @include test
 ↓
 +test
-
-extendでパーシャルを使う場合は
-↓
+```
+## extendでパーシャルを使う場合は
+```
 @extend %test
+```
 
-
-clearfixの使い方
-
+## clearfixの使い方
+```
 .test
-	.alignLeft
-		float: left;
-	@extend %clearfix
+  @extend %clearfix
+  .alignLeft
+    float: left;
+```
 
-[コンパイル後]
+## コンパイル後
+```
 .test:after {
-	content: " ";
-	display: table;
-	clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
+```
