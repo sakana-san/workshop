@@ -8,9 +8,7 @@ var $ = gulpLoadPlugins({
 	replaceString: /\bgulp[\-.]/
 });
 
-//Todoオブジェクト指向にする
 gulp.task('webpack', function() {
-  // webpackConfigに対象ファイルが書かれているので適当なsrcでOK
 	return gulp.src('./src/js/app/app.js')
 	.pipe($.webpack(webpackConfig))
 	.pipe(gulp.dest('dist/js/'));
