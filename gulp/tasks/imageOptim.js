@@ -13,9 +13,5 @@ gulp.task('imageOptim', function() {
 		'src/img/*.gif',
 		'!src/img/sprite/*'
 	])
-	.pipe($.cache($.imagemin({
-		progressive: true,
-		interlaced: true
-	})))
 	.pipe(gulp.dest('dist/img/'));
 });

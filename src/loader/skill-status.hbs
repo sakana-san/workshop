@@ -2,18 +2,16 @@
   {{#each status}}
     <li class="p-skill__item">
       {{name}}
-      <div class="p-skill__status">
-        <table>
+        <table class="p-skill__status">
           <tbody>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="p-skill__structure"></td>
+            <td class="p-skill__structure"></td>
+            <td class="p-skill__structure"></td>
           </tr>
           </tbody>
         </table>
         <div class="p-skill__gauge--{{name}}"></div>
-      </div>
     </li>
   {{/each}}
 </ul>

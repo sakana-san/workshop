@@ -11,9 +11,9 @@ Slide.prototype = {
     this.bindClick();
   },
   bindPosition:  function() {
-    var array = ['../../dist/img/photo01.png', '../../dist/img/photo02.png', '../../dist/img/photo03.png', '../../dist/img/photo04.png'];
+    var array = ['./dist/img/photo01.png', './dist/img/photo02.png', './dist/img/photo03.png', './dist/img/photo04.png'];
     for(var i=0; i<array.length; i++) {
-      this.$el.find('.js-slide').append('<li class="p-intro__slide-motion js-motion js-motion-number' + (i+1) + '"></li>');
+      this.$el.find('.js-slide').append('<li class="p-intro__motion js-motion js-motion-number' + (i+1) + '"></li>');
       this.$el.find('.js-motion-number' + (i+1)).css({'height': '300px', 'background': 'url(' + array[i] + ') center top / cover no-repeat'});
     }
   },
